@@ -23,7 +23,7 @@ function parseErrors(nodeRestfulErrors){
   _.forIn(nodeRestfulErrors, error => errors.push(error.message))
   return errors
 }
-// retorna a quantidade de registros no arquivo
+// Retorna a quantidade de registros no arquivo
 billingCycle.route('count', function(rep, res, next){
   billingCycle.count(function(error, value){
     if (error) {
