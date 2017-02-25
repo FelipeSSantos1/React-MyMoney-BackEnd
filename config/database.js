@@ -1,3 +1,7 @@
+//
+// para rodar o mongo, basta abrir o terminal e digitar mongod
+// para rodar a aplicação em modo dev, basta entrar na pasta do app pelo terminal e digitar npm run dev
+//
 const mongoose = require('mongoose')
 module.exports = mongoose.connect('mongodb://localhost/db_finance')
 
