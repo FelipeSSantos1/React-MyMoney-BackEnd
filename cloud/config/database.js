@@ -1,6 +1,6 @@
 const mongoose = require('mongoose')
 mongoose.Promise = global.Promise
-module.exports = mongoose.connect('mongodb://localhost/mymoney')
+module.exports = mongoose.connect('mongodb://user4b456f:e58da0DJkS1700410bd@cluster-pgrs2-0-eu-west-1-scalabledbs.cloudstrap.io:27002,cluster-pgrs2-1-eu-west-1-scalabledbs.cloudstrap.io:27002/pg-app-zgvh30jlhxbw5qbbkvwxs7894wfyuw?replicaSet=pgrs2&ssl=true')
 
 mongoose.Error.messages.general.required = "O atributo '{PATH}' é obrigatório."
 mongoose.Error.messages.Number.min = 

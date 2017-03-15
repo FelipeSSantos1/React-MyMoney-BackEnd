@@ -2,14 +2,19 @@
   "name": "my-money-backend",
   "version": "1.0.0",
   "description": "",
-  "main": "src/loader.js",
+  "main": "index.js",
+  "repository": {
+        "type": "git",
+        "url": "https://github.com/ParsePlatform/parse-server.git"
+  },
   "scripts": {
     "dev": "nodemon",
-    "production": "pm2 start src/loader.js --name my-money-backend"
+    "production": "pm2 start cloud/loader.js --name my-money-backend",
+    "start": "node index.js"
   },
   "keywords": [],
-  "author": "",
-  "license": "ISC",
+  "author": "Felipe S. Santos",
+  "license": "MIT",
   "dependencies": {
     "body-parser": "^1.15.2",
     "express": "^4.14.0",
@@ -18,9 +23,15 @@
     "mongoose": "^4.7.0",
     "mongoose-paginate": "^5.0.3",
     "node-restful": "^0.2.5",
-    "pm2": "^2.1.5"
+    "pm2": "^2.1.5",
+
+    "parse": "~1.8.0",
+    "parse-server": "~2.2.2"
   },
   "devDependencies": {
     "nodemon": "^1.11.0"
+  },
+  "engines": {
+        "node": ">=4.3"
   }
 }
