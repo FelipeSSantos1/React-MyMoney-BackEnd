@@ -2,15 +2,11 @@
   "name": "my-money-backend",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
-  "repository": {
-        "type": "git",
-        "url": "https://github.com/ParsePlatform/parse-server.git"
-  },
+  "main": "main.js",
   "scripts": {
     "dev": "nodemon",
-    "production": "pm2 start cloud/loader.js --name my-money-backend",
-    "start": "node index.js"
+    "production": "pm2 start cloud/main.js --name my-money-backend",
+    "start": "node main.js"
   },
   "keywords": [],
   "author": "Felipe S. Santos",
